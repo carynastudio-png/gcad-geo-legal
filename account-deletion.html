@@ -1,0 +1,72 @@
+<!doctype html>
+<!-- Copyright (c) 2026 Nguyen Trong Gon. All rights reserved. -->
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Account Deletion — GCAD Geo</title>
+<meta name="description" content="How to delete your GCAD Geo account / Hướng dẫn xóa tài khoản GCAD Geo">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b6b5c'/%3E%3Ctext x='16' y='22' font-size='16' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3EG%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#f6f8fa;--card:#fff;--fg:#1b2430;--muted:#5b6776;--line:#dde3ea;--acc:#0b6b5c;--acc2:#e8f4f1;--warn:#fff6e0;--warnl:#e9c46a}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1519;--card:#171f25;--fg:#e6ebf0;--muted:#9aa7b4;--line:#2a343c;--acc:#4fc3a8;--acc2:#16302b;--warn:#2b2411;--warnl:#7a6320}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+.wrap{max-width:820px;margin:0 auto;padding:0 16px 56px}
+header.top{background:var(--card);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;flex-wrap:wrap}
+.brand{font-weight:700;color:var(--fg);text-decoration:none;letter-spacing:.2px}.brand span{color:var(--acc)}
+nav.links{display:flex;gap:14px;flex-wrap:wrap;font-size:14px}nav.links a{color:var(--muted);text-decoration:none}nav.links a:hover,nav.links a[aria-current]{color:var(--acc)}
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.lang button{border:0;background:transparent;color:var(--muted);padding:6px 12px;font:inherit;font-size:13px;cursor:pointer}
+.lang button[aria-pressed=true]{background:var(--acc);color:#fff}
+h1{font-size:1.75rem;line-height:1.25;margin:28px 0 6px}
+h2{font-size:1.2rem;margin:34px 0 8px;padding-top:14px;border-top:1px solid var(--line)}
+p,li{overflow-wrap:anywhere}ul,ol{padding-left:22px}li{margin:4px 0}
+.meta{color:var(--muted);font-size:14px;margin:0 0 18px}
+a{color:var(--acc)}
+.note{background:var(--warn);border:1px solid var(--warnl);border-radius:10px;padding:12px 14px;margin:16px 0;font-size:15px}
+.ok{background:var(--acc2);border-radius:10px;padding:12px 14px;margin:16px 0}
+.tbl{overflow-x:auto;margin:12px 0}table{border-collapse:collapse;width:100%;min-width:520px;font-size:15px;background:var(--card)}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}th{background:var(--acc2)}
+.grid{display:grid;gap:14px;grid-template-columns:1fr;margin:18px 0}@media(min-width:640px){.grid{grid-template-columns:repeat(3,1fr)}}
+.tile{display:block;text-decoration:none;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}
+.tile:hover{border-color:var(--acc)}.tile b{display:block;color:var(--acc);margin-bottom:4px}.tile small{color:var(--muted)}
+footer{margin-top:40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:16px}
+[data-lang=vi] .en{display:none}[data-lang=en] .vi{display:none}
+code{background:var(--acc2);padding:1px 5px;border-radius:4px;font-size:.92em}
+</style>
+<script>(function(){var d=document.documentElement,k='gcad-legal-lang';
+function set(l){d.setAttribute('data-lang',l);d.lang=l;
+document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.l===l))});
+try{localStorage.setItem(k,l)}catch(e){}}
+var s=null;try{s=localStorage.getItem(k)}catch(e){}
+var l=s||((navigator.language||'vi').toLowerCase().indexOf('vi')===0?'vi':'en');
+d.setAttribute('data-lang',l);d.lang=l;
+document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){set(b.dataset.l)})});set(l)});
+})();</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="./">GCAD <span>Geo</span></a>
+<nav class="links" aria-label="Legal"><a href="privacy.html"><span class="vi">Quyền riêng tư</span><span class="en">Privacy</span></a><a href="terms.html"><span class="vi">Điều khoản</span><span class="en">Terms</span></a><a href="account-deletion.html" aria-current="page"><span class="vi">Xóa tài khoản</span><span class="en">Account deletion</span></a></nav>
+<div class="lang" role="group" aria-label="Language / Ngôn ngữ"><button type="button" data-l="vi" aria-pressed="true">Tiếng Việt</button><button type="button" data-l="en" aria-pressed="false">English</button></div>
+</div></header>
+<main class="wrap">
+
+<h1><span class="vi">Xóa tài khoản &amp; dữ liệu</span><span class="en">Account &amp; Data Deletion</span></h1>
+<p class="meta"><span class="vi">Ứng dụng GCAD Geo (<code>vn.aquamep.fieldview</code>) · Nhà phát triển: Nguyễn Trọng Gôn · Cập nhật: 19/11/2026</span><span class="en">GCAD Geo app (<code>vn.aquamep.fieldview</code>) · Developer: Nguyen Trong Gon · Last updated: 19 November 2026</span></p>
+<p class="vi">Trang này hướng dẫn cách yêu cầu xóa tài khoản GCAD Geo (đăng nhập Google) và dữ liệu liên kết với tài khoản đó.</p><p class="en">This page explains how to request deletion of your GCAD Geo account (Google Sign-In) and the data linked to it.</p>
+<h2><span class="vi">1. Cách yêu cầu xóa</span><span class="en">1. How to request deletion</span></h2>
+<ol class="vi"><li><strong>Qua email:</strong> gửi thư tới <a href="mailto:carynastudio@gmail.com">carynastudio@gmail.com</a> từ <strong>chính địa chỉ email Google bạn đã dùng để đăng nhập</strong>, tiêu đề <code>Yêu cầu xóa tài khoản GCAD Geo</code>, ghi rõ bạn muốn xóa tài khoản và dữ liệu liên kết.</li><li><strong>Trong ứng dụng:</strong> mở <em>Cài đặt → Tài khoản</em> để <strong>đăng xuất</strong> và gỡ thông tin đăng nhập khỏi thiết bị; sau đó gửi email như bước 1 để xóa dữ liệu phía máy chủ.</li><li>Chúng tôi sẽ xác minh yêu cầu và xử lý trong vòng <strong>30 ngày</strong>, rồi xác nhận lại bằng email.</li></ol><ol class="en"><li><strong>By email:</strong> write to <a href="mailto:carynastudio@gmail.com">carynastudio@gmail.com</a> from <strong>the same Google email address you signed in with</strong>, subject <code>GCAD Geo account deletion request</code>, stating you want your account and linked data deleted.</li><li><strong>In the app:</strong> open <em>Settings → Account</em> to <strong>sign out</strong> and remove sign-in data from the device; then send the email from step 1 to delete server-side data.</li><li>We will verify the request and process it within <strong>30 days</strong>, then confirm by email.</li></ol>
+<h2><span class="vi">2. Dữ liệu nào bị xóa</span><span class="en">2. What is deleted</span></h2>
+<div class="tbl vi"><table><thead><tr><th>Dữ liệu</th><th>Xử lý</th></tr></thead><tbody><tr><td>Thông tin tài khoản Google gắn với ứng dụng (email, tên hiển thị, mã tài khoản)</td><td>Xóa</td></tr><tr><td>Liên kết giữa tài khoản và giấy phép/thiết bị ở máy chủ giấy phép</td><td>Xóa hoặc gỡ liên kết</td></tr><tr><td>Dữ liệu trên máy (bản vẽ, điểm đo, ảnh, ghi chú, cài đặt, mảnh bản đồ đã lưu)</td><td>Không nằm trên máy chủ của chúng tôi. Bạn tự xóa bằng <em>Cài đặt Android → Ứng dụng → GCAD Geo → Bộ nhớ → Xóa dữ liệu</em> hoặc gỡ cài đặt</td></tr><tr><td>Bản ghi giao dịch/hóa đơn của các lần mua</td><td><strong>Có thể được giữ lại</strong> trong thời hạn pháp luật về kế toán/thuế yêu cầu, tách khỏi thông tin nhận dạng khi có thể</td></tr></tbody></table></div><div class="tbl en"><table><thead><tr><th>Data</th><th>Handling</th></tr></thead><tbody><tr><td>Google account info linked to the app (email, display name, account ID)</td><td>Deleted</td></tr><tr><td>Links between the account and license/device on the license server</td><td>Deleted or unlinked</td></tr><tr><td>On-device data (drawings, points, photos, notes, settings, cached tiles)</td><td>Not on our servers. Delete yourself via <em>Android Settings → Apps → GCAD Geo → Storage → Clear data</em> or uninstall</td></tr><tr><td>Transaction/receipt records of purchases</td><td><strong>May be retained</strong> for the period required by accounting/tax law, separated from identifying information where possible</td></tr></tbody></table></div>
+<div class="note vi"><strong>Lưu ý:</strong> xóa tài khoản <strong>không tự hủy đăng ký</strong> đang chạy. Hãy hủy trong <em>Google Play → Thanh toán &amp; đăng ký → Đăng ký</em> trước để không bị tính phí tiếp. Sau khi xóa, quyền lợi gắn với tài khoản/giấy phép có thể mất; hãy nêu trong email cách xử lý gói trọn đời bạn đã mua.</div><div class="note en"><strong>Note:</strong> deleting the account does <strong>not cancel</strong> an active subscription. Cancel it first in <em>Google Play → Payments &amp; subscriptions → Subscriptions</em> to avoid further charges. After deletion, benefits tied to the account/license may be lost; tell us in your email how to treat any lifetime plan you bought.</div>
+<h2><span class="vi">3. Chỉ muốn xóa một phần dữ liệu?</span><span class="en">3. Only want to delete part of your data?</span></h2>
+<p class="vi">Bạn có thể chỉ xóa dữ liệu trên máy mà không xóa tài khoản, hoặc gỡ quyền truy cập tệp/vị trí trong Cài đặt Android. Mọi thắc mắc: <a href="mailto:carynastudio@gmail.com">carynastudio@gmail.com</a>.</p><p class="en">You can delete only on-device data without deleting your account, or revoke file/location access in Android Settings. Questions: <a href="mailto:carynastudio@gmail.com">carynastudio@gmail.com</a>.</p>
+
+<footer><p class="vi">© 2026 Nguyễn Trọng Gôn (nhà phát triển cá nhân). Ứng dụng GCAD Geo, mã gói <code>vn.aquamep.fieldview</code>. Liên hệ: <a href="mailto:carynastudio@gmail.com">carynastudio@gmail.com</a>.</p><p class="en">© 2026 Nguyen Trong Gon (individual developer). GCAD Geo app, package <code>vn.aquamep.fieldview</code>. Contact: <a href="mailto:carynastudio@gmail.com">carynastudio@gmail.com</a>.</p></footer>
+</main>
+</body>
+</html>
