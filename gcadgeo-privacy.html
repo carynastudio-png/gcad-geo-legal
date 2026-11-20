@@ -1,0 +1,63 @@
+<!doctype html>
+<!-- Copyright (c) 2026 Nguyen Trong Gon. All rights reserved. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Privacy Policy — GCAD Geo · Caryna Studio</title>
+<style>
+  :root { --ink:#16202a; --muted:#56616d; --line:#d8dee4; --accent:#b45309; --bg:#ffffff; --band:#f6f3ee; }
+  :root:not([data-theme="light"]) { }
+  @media (prefers-color-scheme: dark) { :root { --ink:#e8edf2; --muted:#9aa6b2; --line:#2c3640; --accent:#fbbf24; --bg:#11161b; --band:#182028; } }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  header.brand { background:var(--band); border-bottom:1px solid var(--line); }
+  header.brand div { max-width:820px; margin:0 auto; padding:14px 20px; display:flex; gap:12px; align-items:baseline; flex-wrap:wrap; }
+  header.brand b { font-size:1.05rem; letter-spacing:.02em; }
+  header.brand span { color:var(--muted); font-size:.9rem; }
+  main { max-width:820px; margin:0 auto; padding:28px 20px 64px; }
+  h1 { font-size:1.7rem; margin:0 0 6px; }
+  h2 { font-size:1.2rem; margin:30px 0 8px; border-top:1px solid var(--line); padding-top:18px; }
+  .meta { color:var(--muted); font-size:.92rem; }
+  nav a { color:var(--accent); margin-right:16px; }
+  a { color:var(--accent); }
+  .tw { overflow-x:auto; }
+  table { border-collapse:collapse; width:100%; font-size:.93rem; margin:10px 0; }
+  th, td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:var(--band); }
+  code { background:var(--band); padding:1px 5px; border-radius:4px; font-size:.9em; }
+  footer { max-width:820px; margin:0 auto; padding:0 20px 40px; color:var(--muted); font-size:.88rem; }
+</style>
+</head>
+<body>
+<header class="brand"><div><b>Caryna Studio</b><span>Individual Developer: Nguyen Trong Gon · carynastudio@gmail.com</span></div></header>
+<main>
+<h1>Privacy Policy — GCAD Geo</h1>
+<p class="meta"><b>Effective date:</b> November 20, 2026 · <b>App:</b> GCAD Geo (<code>vn.aquamep.fieldview</code>, Android) · <b>Developer:</b> Caryna Studio (Individual Developer: Nguyen Trong Gon) · <b>Contact:</b> <a href="mailto:carynastudio@gmail.com">carynastudio@gmail.com</a></p>
+<nav><a href="gcadgeo-terms.html">Terms of Service</a></nav>
+<h2>1. Summary</h2>
+<ul><li>Your drawings, measurements, notes, photos and GPS/GNSS positions <b>stay on your device</b>. We do not read, upload or sell them.</li><li><b>CAD files (DWG, DXF, FVZ) and survey data are processed 100 % on the device and are never uploaded to any server.</b> If a drawing needs more memory than the device has, the app refuses to open it and tells you so; it does not send the file anywhere.</li><li><b>Purchases and subscriptions are handled directly by Google Play Billing.</b> We do not operate a licence or payment server for GCAD Geo and we do not receive your purchase token or payment details.</li><li>GCAD Geo contains <b>no advertising and no third-party analytics or tracking SDKs</b>, and does not send automatic crash reports.</li><li>The app makes network requests only for: Google Play, <b>map tiles</b> for the area you are viewing, optional <b>resource packs</b>, and servers <b>you</b> configure yourself (NTRIP/CORS caster, WebDAV storage).</li><li>You can use the app without an account. Signing in with Google is optional.</li></ul>
+<h2>2. Data that stays on your device</h2>
+<div class="tw"><table><thead><tr><th>Data</th><th>Used for</th><th>Notes</th></tr></thead><tbody><tr><td>CAD files (DWG/DXF/FVZ), measured points, notes, redlines, exports</td><td>Viewing, measuring, staking out, reporting</td><td>Stored in the app's private storage or opened through the Android file picker (Storage Access Framework, read access to the files you choose). They leave the device only if <b>you</b> export or share them.</td></tr><tr><td>Precise location (GPS, and RTK/GNSS from a paired receiver)</td><td>Showing your position, navigation, staking out, recording coordinates</td><td>Processed on the device. Not sent to us.</td></tr><tr><td>Camera images</td><td>AR overlay, photos attached to notes, text recognition of coordinate tables</td><td>Recognition runs on the device (Google ML Kit text recognition). The library may fetch or update its model files through Google Play services. Photos are not uploaded by the app.</td></tr><tr><td>Bluetooth connection</td><td>Connecting an RTK/GNSS receiver</td><td>Used with the "never for location" flag; not used to locate you.</td></tr><tr><td>Account profile (only if you sign in with Google)</td><td>Showing which account is signed in on this device and keeping the account state in sync on the device</td><td>Your Google e-mail, display name and Google account ID are kept in Android Keystore-backed secure storage <b>on the device only</b>. The Google ID token is not stored. They are not sent to any Caryna Studio server.</td></tr><tr><td>Plan status</td><td>Knowing which GCAD Geo plan Google Play reports for you</td><td>A small local record (product ID and the time Google Play last confirmed it) in secure storage. It contains no card or personal data.</td></tr><tr><td>Settings, calibrations, local diagnostic log</td><td>Personalisation, support</td><td>Not sent automatically. If you choose to export the diagnostic log and send it to us, we receive what the file contains.</td></tr></tbody></table></div>
+<h2>3. Data sent over the network</h2>
+<div class="tw"><table><thead><tr><th>Purpose</th><th>Recipient</th><th>What is sent</th><th>When</th></tr></thead><tbody><tr><td>Purchases, subscriptions, restoring purchases</td><td>Google Play</td><td>Handled by Google Play Billing under Google's privacy policy. We never see your card number or purchase token.</td><td>When you buy, restore or manage a plan, and when the app asks Google Play which plan is active</td></tr><tr><td>Map tiles (terrain and vector)</td><td>AWS Open Data (Terrain Tiles) and OpenFreeMap (<code>tiles.openfreemap.org</code>, data © OpenStreetMap contributors, Overture Maps Foundation)</td><td>The tile address <code>zoom/x/y</code> of the area on screen, a generic <code>User-Agent</code> (<code>GCADGeo-FieldView/1.0</code>) and, inevitably, your IP address</td><td>While you view the map with "download basemap over the network" switched on (default). Switch it off in Settings to stop all tile requests.</td></tr><tr><td>Optional resource packs (reference data)</td><td>A Caryna Studio content-delivery network</td><td>A request for the pack manifest and the files listed in it. No personal data, account or purchase information.</td><td>When a pack is updated</td></tr><tr><td>Stake-out correction stream (NTRIP/CORS)</td><td><b>A caster you configure</b></td><td>The credentials you enter and an approximate position sentence (NMEA GGA) required by the NTRIP protocol</td><td>Only while you are connected</td></tr><tr><td>Cloud save (WebDAV)</td><td><b>A server you configure</b></td><td>The files you choose to sync; the password/token is kept in secure storage</td><td>Only if you enable it</td></tr></tbody></table></div>
+<p>We do not link tile requests to an account, advertising ID or device ID. The tile hosts can see the IP address and may keep technical logs under their own policies. A tile at zoom 14–15 covers roughly 1–2.5 km, so the host can infer an approximate area, but not your exact position. Downloaded tiles are cached on the device (up to about 300 MB, oldest removed first).</p>
+<h2>4. Permissions</h2>
+<div class="tw"><table><thead><tr><th>Permission</th><th>Purpose</th></tr></thead><tbody><tr><td>Internet / network state</td><td>Connections in section 3</td></tr><tr><td>Precise and approximate location (while the app is in use; a foreground service of type <i>location</i> while an RTK session runs)</td><td>Position dot, navigation, recording coordinates</td></tr><tr><td>Bluetooth scan/connect (Android 12+) / legacy Bluetooth (Android 11 and lower)</td><td>Pairing with an RTK/GNSS receiver</td></tr><tr><td>Foreground service (connected device, location) and notifications</td><td>Keep an RTK session alive and show its status</td></tr><tr><td>Camera</td><td>AR, photos, text recognition</td></tr><tr><td>Read external storage (Android 12L and lower only)</td><td>Open files sent by other apps</td></tr><tr><td>Wake lock</td><td>Keep the screen/session awake in the field when you ask</td></tr></tbody></table></div>
+<p>The app does not request all-files access (<code>MANAGE_EXTERNAL_STORAGE</code>). You can withdraw any permission in Android Settings.</p>
+<h2>5. Security</h2>
+<ul><li>Plan status and credentials are held in Android Keystore-backed storage. Connections to servers use HTTPS.</li><li>Because CAD files and survey data never leave the device, they cannot be exposed by a server breach of ours.</li><li>No password is stored for the app itself, because there is no GCAD Geo account.</li></ul>
+<h2>6. Retention, deletion and your rights</h2>
+<ul><li><b>On your device:</b> data exists until you delete it (Android Settings → Apps → GCAD Geo → Storage → Clear data, or uninstall).</li><li><b>We hold no purchase, payment or account records for GCAD Geo.</b> Purchase records are kept by Google Play under Google's policies.</li><li><b>Requesting deletion:</b> if you signed in with Google or sent us a diagnostic file or e-mail, write to <b><a href="mailto:carynastudio@gmail.com">carynastudio@gmail.com</a></b> with the subject "GCAD Geo — data deletion". We delete any data we hold about you <b>within 30 days</b> of receiving the request and confirm by reply. You can also remove the profile stored on the device by signing out or clearing app data.</li><li>Depending on where you live (for example under the GDPR/UK GDPR, the CCPA/CPRA or Vietnam's Decree 13/2023/ND-CP) you may have the right to access, correct, delete, port or restrict processing of personal data and to lodge a complaint with your supervisory authority. Use the same e-mail address.</li><li>We do not sell or share personal data for advertising.</li></ul>
+<h2>7. International transfers</h2>
+<p>Map tile requests go to the global infrastructure of the providers named above, which may be outside your country. We do not transfer your CAD files or survey data, because they never leave your device.</p>
+<h2>8. Children</h2>
+<p>GCAD Geo is a professional tool and is not directed to children under 16. We do not knowingly collect their data.</p>
+<h2>9. Changes</h2>
+<p>We will update the effective date at the top and, for material changes, notify you in the app before they apply.</p>
+<h2>10. Contact</h2>
+<p>Caryna Studio (Individual Developer: Nguyen Trong Gon) · <b><a href="mailto:carynastudio@gmail.com">carynastudio@gmail.com</a></b></p>
+</main>
+<footer>© 2026 Caryna Studio. All rights reserved. GCAD Geo is published by Caryna Studio.</footer>
+</body>
+</html>
